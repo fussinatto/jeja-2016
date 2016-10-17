@@ -1,0 +1,33 @@
+<div class="project-single-intro waiting">
+
+	<div class="project-img">
+		<img src="{{header-image}}" alt="">
+	</div>
+	<div class="project-title">
+		<h2>{{title}}</h2>
+		<span class="project-year">{{year}}</span>
+		<span class="project-titledesc"> {{subtitle}}</span>
+	</div>
+	<div class="cf"></div>
+
+</div>
+
+<article class="project-single-content">
+	<section class="b-text">
+		{{#each proj-text}}
+		    <p>{{this}}</p>
+		{{/each}}
+	</section>
+
+	<section class="b-images">
+
+		{{#each imgs}}
+			<a class="fancybox proj-img-link" rel="group" href="{{this}}">
+				<img src="{{this}}" alt="">
+			</a>		    
+		{{/each}}
+
+	</section>
+
+</article>
+

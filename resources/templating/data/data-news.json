@@ -1,0 +1,38 @@
+{
+	"news":[
+		{
+		"date":"02.April 2016",
+			"title": "Archive of Teodor Vujić",
+			"subtitle": "Exhibition in KDW",
+			"text": "Teodor Vujić’s Arhive is collection of multimedia items that gathers objects of symbolical values as well as legal documents, with a purpose to reconstruct the family history.",
+			"imgs":[
+				"img/projects/arhiva/ArhivaTV211.jpg",
+				"img/projects/arhiva/video_still-copy.jpg"
+			]
+		},
+		{
+			"date":"12.Januar 2015",
+			"title": "Some Awesome Exhibition",
+			"subtitle": "Open night talk with Oprah",
+			"text": "Archive represents my search for Teodor trough video, drawings.",
+			"imgs":[
+				"img/projects/arhiva/ArhivaTV3_300dpi1.jpg",
+				"img/projects/arhiva/ArhivaTV12.jpg",
+				"img/projects/arhiva/ArhivaTV19.jpg"
+			]
+		},
+		{
+			"date":"21.December 1984",
+			"title": "More News from nowhere",
+			"subtitle": "21.December 2016",
+			"text": "Trough quest for Teodor, whose identity is still not legally confirmed, inevitably has to deal with questions: whose names get to be written in history, what purpose has an individual in big war machinery, and what happens with ones that stay behind. Objects in Archive are produced from cardboard (bust, Alpine system …). There are drawings made with graphite pencil ( Bosnian regiment, non-existing photo of Teodor…), documents and copy prints of legal acts (municipality register), audio and video files. Language that I use in the work is in directly connected with a situation in which a conversation, text or audio appears. That makes a Archive multilingual. Documents on my mother tongue are those that represents thinking process and ideas or conversation with the family. Documents on German are those files related to dialog with Austrian government. Documents on English are parts that present and explain the work to the public.",
+			"imgs":[
+				"img/projects/arhiva/video_still-copy.jpg",
+				"img/projects/arhiva/ArhivaTV3_300dpi1.jpg",
+				"img/projects/arhiva/ArhivaTV3_300dpi1.jpg",
+				"img/projects/arhiva/ArhivaTV12.jpg",
+				"img/projects/arhiva/ArhivaTV19.jpg"
+			]
+		}
+	]
+}

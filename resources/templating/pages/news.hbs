@@ -1,0 +1,43 @@
+---
+title: News
+bodyclass: is-news-page
+showfooter: false
+activeHeaderLink: news
+---
+{{#extend "lyt-default"}}
+	{{#content "main"}}
+		{{#with data-news}}
+		<div class="b-news">
+			
+			<ul class="news-nav">
+				{{#each news}}
+					<li>
+						<a class="news-nav__link js-news-link"href="#news{{@index}}">{{date}}</a>
+					</li>
+				{{/each}}
+			</ul>
+
+			<section class="news-content">
+				{{#each news}}
+				<article class="news-single" id="news{{@index}}">
+					<span  class="news-subtitle">{{subtitle}}</span>
+					<h5 class="news-title">{{title}}</h6>
+					<p  class="news-text">{{text}}</p>
+
+					<div class="news-single__img-wrapper">
+						
+						{{#each imgs}}
+							<img class="news-single__img" src="{{this}}" alt="">
+						{{/each}}
+					</div>
+
+				</article>
+				{{/each}}
+			</section>
+
+		</div>
+		{{/with}}
+	{{/content}}
+{{/extend}}
+
+

@@ -1,0 +1,31 @@
+{
+  "generator-veams": {
+    "projectName": "jejin2016",
+    "projectAuthor": "",
+    "taskRunner": [
+      "grunt"
+    ],
+    "templateEngine": "mangony",
+    "mangonyExpress": false,
+    "installExtendedLayout": false,
+    "installPlugin": false,
+    "gulpModules": [],
+    "gruntModules": [
+      "grunt-autoprefixer",
+      "grunt-dr-svg-sprites",
+      "grunt-includes",
+      "grunt-responsive-images"
+    ],
+    "features": [
+      "createDevFolder"
+    ],
+    "jsLibs": [
+      "jquery"
+    ],
+    "cssLibs": [],
+    "testAndQA": false,
+    "testAndQALibs": [],
+    "veamsPackages": [],
+    "docs": []
+  }
+}

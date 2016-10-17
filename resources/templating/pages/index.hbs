@@ -1,0 +1,42 @@
+---
+title: index
+menuLink: Home
+sortOrder: 01
+showfooter: false
+bodyclass: is-home-page
+activeHeaderLink: projects
+---
+
+{{#extend "lyt-default"}}
+	{{#content "main"}}
+			
+		<div class="home-info-section">
+			{{!-- <section class="left-section">
+				<h1>Jelena Fuzinato</h1>
+			</section>
+			<section class="right-section">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nostrum, id ex totam vero dolore atque, hic itaque sunt asperiores eligendi vitae similique. Minus rem saepe, delectus libero sequi consequatur.</p>
+			</section> --}}
+		</div>
+		<div class="home-project-list">
+
+			<ul class="project-list">
+				{{#each data-projects}}
+					<li class="project-list-item">
+						<a class="project-link js-project-link" href="{{link}}">
+							<span class="proj-name">{{title}}</span>
+							<div class="proj-desc__wrapper">
+								<span class="proj-desc">{{year}} | {{subtitle}}</span>
+							</div>
+						</a>
+						<img src="{{img-src}}" alt="" class="proj-img">
+					</li>
+				{{/each}}
+			</ul>
+
+		</div>
+	{{/content}}
+{{/extend}}
+
+
+

@@ -1,0 +1,163 @@
+/* ===================================================
+BASE
+=================================================== */
+
+/* ---------------------------------------------------
+Global styles
+--------------------------------------------------- */
+html {
+	height: 100%;
+}
+
+head {
+    @include respond-to(desktop){
+        font-family: "desktop";
+    }
+
+    @include respond-to(tab){
+        font-family: "tablet";
+    }
+
+    @include respond-to(phone){
+        font-family: "phone";
+    }
+}
+
+@font-face {
+    font-family: 'Campton-Bold';
+    src: url('../fonts/Campton-Bold.otf') format('opentype');
+}
+
+body {
+    background: $bgc;
+    font-family: 'Cousine', monospace;
+    color: $textcolor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    color: $textcolor;
+    margin:0;
+    // font-weight: normal;
+    // text-transform: uppercase;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+
+.wrapper{
+	margin-top: 120px;
+	padding: 0 100px;
+	box-sizing: border-box;
+	overflow: hidden;
+	background-color: $bgc;
+	min-height: calc(100vh - 250px); // 250px = footer + header
+
+    @include respond-to(tab) {
+        padding: 0 50px;
+        margin-top: 80px;
+    }
+
+    @include respond-to(phone) {
+        padding: 0 20px;
+        margin-top: 60px;
+    }
+
+    .is-home-page & {
+		width: 100%;
+		padding-right: 25vw;
+		padding-left: 150px;
+		padding-top: 170px;
+		padding-bottom:100px;
+		margin-top: 0; // weird affects are disturbing picture, so increadse padding insted
+	}
+
+}
+
+
+.scroll-to-top {
+	position: fixed;
+	display: none;
+    bottom: 20px;
+    right: 20px;
+    opacity: 1;
+    visibility: visible;
+    background-color: $bgc;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid $textcolor-dim;
+    cursor: pointer;
+    outline: none;
+    transition-property: opacity, visibility, border-color;
+    transition-duration: 0.2s;
+
+    body.is-page-loaded & {
+    	display: block;
+    }
+    body.is-scrolled-ontop & {
+    	opacity: 0;
+    	visibility: hidden;
+    }
+
+    svg {
+    	margin-left: -1px;
+    	margin-top: 2px;
+
+    	path {
+    		transition: fill 0.2s;
+    		fill: $textcolor-dim;
+    	}
+    }
+
+    &:hover {
+    	border-color: $textcolor;
+
+    	svg path {
+    		fill: $textcolor;
+    	}
+    }
+}
+
+//HELPERS
+
+.is-hidden{
+	display:none;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.arrow{
+	font-size:14px;
+}
+
+
+.m-lineunder{
+	display: inline-block;
+	border-bottom:1px solid $bgc;
+	margin-bottom:10px;
+}
+
+.m-centertext{
+	text-align:center;
+}

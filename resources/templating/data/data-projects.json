@@ -1,0 +1,171 @@
+{
+	"archive":{
+		"title": "Archive of Teodor Vujić",
+		"link": "archive.html",
+		"year": "2014-16",
+		"subtitle": " multimedia installation",
+		"proj-text": [
+			"Teodor Vujić’s Arhive is collection of multimedia items that gathers objects of symbolical values as well as legal documents, with a purpose to reconstruct the family history.",
+
+			"Teodor Vujić was my great-grandfather.  According to family stories, Teodor fought for K.u.K army in the World War I. Only information about his existence is a oral transmision that was passed along from generation to generation. According to those stories: he was taken away and forced to join the army when his son (my grandfather) was three years old, that he died on unknown battlefield somewhere in Alps, and that his grave with tombstone with his name, is located somewhere in the Tirol area. Non one of these assumptions was ever confirmed.",
+
+			"Archive represents my search for Teodor trough video, drawings, photography and legal documents. On one hand, archive is a visual representation of family myth, and on the other is a search for documents that confirm that Teodor even existed in the first place. Written and material evidence of his life do not exist. There are no photographs, no birth certificate, nor was he ever stated in the list of casualties of the K.u.K army.",
+
+			"Audio recording of the family story, told by my father, can be found in archive. In the work, I try to reconstruct Teodor’s face according to my grandmothers description, according to the visage of his descendants, and with my idea of his face. Part of the archives are video showing my travel trough Austria, video from municipality in Kokori village in which Teodor was supposedly born, birth certificate of Teorods son, blind map of Alps mountains, drawings and objects from the Museum of War in Vienna, copy prints of aquarells and paintings that describes (visually and textually) uniforms of Bosnian regiment of K.u.K army, copy prints of photographs, list of soldiers of World War I from BiH territory whose names can be found in Austrian war archives etc. This archive has a purpose to reveal more about family and personal identity, while simultaneously observing political and historical context of the time in which Teodor lived, and contemporary situation and social context in BiH in which I live in. Archive works partly as an artistic form of imaginary, and partly in the realm of the legal acts, world history and global politic. Goal is to enable more in-depth understanding of personal context.",
+
+			"His character gathers discourse about family myth of a hero, and opens a dialog that asks the questions about identity in changing political context of Bosnia and Herzegovina in last 100 years. Trough quest for Teodor, whose identity is still not legally confirmed, inevitably has to deal with questions: whose names get to be written in history, what purpose has an individual in big war machinery, and what happens with ones that stay behind. Objects in Archive are produced from cardboard (bust, Alpine system …). There are drawings made with graphite pencil ( Bosnian regiment, non-existing photo of Teodor…), documents and copy prints of legal acts (municipality register), audio and video files. Language that I use in the work is in directly connected with a situation in which a conversation, text or audio appears. That makes a Archive multilingual. Documents on my mother tongue are those that represents thinking process and ideas or conversation with the family. Documents on German are those files related to dialog with Austrian government. Documents on English are parts that present and explain the work to the public.",
+
+			"Teodor V. Archive exists in digital form, where it is possible to see clips and video work. The whole website is linked to the original documents, and can serve as basis for future research."
+		],
+		"header-image": "img/projects/arhiva/ArhivaTV2_300dp11.jpg",
+		"img-src":"img/home/arhiva.jpg",
+		"nexttitle": "Čečava",
+		"nextlink": "cecava.html",
+		"prevtitle": "UnnecessaryY II",
+		"prevlink": "unnecessary2.html",
+		"imgs":[
+			"img/projects/arhiva/ArhivaTV3_300dpi1.jpg",
+			"img/projects/arhiva/ArhivaTV12.jpg",
+			"img/projects/arhiva/ArhivaTV19.jpg",
+			"img/projects/arhiva/ArhivaTV211.jpg",
+			"img/projects/arhiva/video_still-copy.jpg"
+		]
+	},
+	"unnecessary3":{
+		"title": "Unnecessary III",
+		"link": "unnecessary3.html",
+		"year": 2014,
+		"header-image": "img/projects/can-a-woman/proj-canawoman.jpg",
+		"img-src": "img/home/arhiva.jpg",
+		"subtitle": "Performance, Berlin",
+		"proj-text": [
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dolor, distinctio praesentium repudiandae fugit cum accusamus? Suscipit incidunt eius, non rem doloremque neque dignissimos quibusdam unde amet, est minima blanditiis.",
+			"Consectetur adipisicing elit. Impedit dolor, distinctio praesentium repudiandae fugit cum accusamus? Suscipit incidunt eius, non rem doloremque neque dignissimos quibusdam unde amet, est minima blanditiis.",
+			"Impedit dolor, distinctio praesentium repudiandae fugit cum accusamus? Suscipit incidunt eius, non rem doloremque neque dignissimos quibusdam unde amet, est minima blanditiis."
+		],
+		"nexttitle": "",
+		"nextlink": "",
+		"prevtitle": "Čečava",
+		"prevlink": "cecava.html",
+		"imgs":["img/projects/can-a-woman/can_a_woman01.jpg",
+			"img/projects/can-a-woman/can_a_woman02.jpg",
+			"img/projects/can-a-woman/can_a_woman03.jpg",
+			"img/projects/can-a-woman/can_a_woman04.jpg",
+			"img/projects/can-a-woman/can_a_woman05.jpg",
+			"img/projects/can-a-woman/can_a_woman06.jpg",
+			"img/projects/can-a-woman/can_a_woman07.jpg"]
+	},
+	"cecava":{
+		"title": "Čečava",
+		"link": "cecava.html",
+		"year": 2013,
+		"subtitle": "Photography",
+		"header-image": "",
+		"img-src": "img/home/parasite.jpg",
+		"nexttitle": "Unnecessary III",
+		"nextlink": "unnecessary3.html",
+		"prevtitle": "Can a Woman Make Big Piece?",
+		"prevlink": "canawoman.html"
+	},
+	"canawoman":{
+		"title": "Can a Woman Make Big Piece?",
+		"link": "canawoman.html",
+		"year": 2012,
+		"subtitle": "Instalation made of female clothing",
+		"header-image": "img/projects/can-a-woman/proj-canawoman.jpg",
+		"img-src":"img/home/3.jpg",
+		"nexttitle": "ČečavaA",
+		"nextlink": "cecava.html",
+		"prevtitle": "UnnecessaryY II",
+		"prevlink": "unnecessary2.html",
+		"imgs":[
+			"img/projects/can-a-woman/can_a_woman01.jpg",
+			"img/projects/can-a-woman/can_a_woman02.jpg",
+			"img/projects/can-a-woman/can_a_woman03.jpg",
+			"img/projects/can-a-woman/can_a_woman04.jpg",
+			"img/projects/can-a-woman/can_a_woman05.jpg",
+			"img/projects/can-a-woman/can_a_woman06.jpg",
+			"img/projects/can-a-woman/can_a_woman07.jpg"
+			]
+	},
+	"unnecessary2":{
+		"title": "Unnecessary II",
+		"link": "unnecessary2.html",
+		"year": 2013,
+		"subtitle": "Performance, Belgrade",
+		"header-image": "",
+		"img-src":"img/home/parasite.jpg"
+	},
+	"unnecessary1":{
+		"title": "Unnecessary I",
+		"link": "unnecessary1.html",
+		"year": 2012,
+		"subtitle": "Performance, Berlin",
+		"header-image": "",
+		"nextlink": ["", ".html"],
+		"prevlink": ["Čečava", "cecava.html"]
+	},
+	
+	"museumproject":{
+		"title": "Museum project",
+		"link": "museumproject.html",
+		"year": "started in 2009",
+		"subtitle": "Multimedial project",
+		"header-image": ""
+	},
+	"sistinechapel":{
+		"title": "Sistine Chapel Ceiling",
+		"link": "sistinechapel.html",
+		"year": 2011,
+		"subtitle": "Documentation of performance",
+		"header-image": "",
+		"nextlink": ["", ".html"],
+		"prevlink": ["", ".html"]
+	},
+	"with-without":{
+		"title": "With/Without",
+		"link": "with-without.html",
+		"year": 2011,
+		"subtitle": "Video projection on facade of the Museum",
+		"header-image": "",
+		"nextlink": ["", ".html"],
+		"prevlink": ["", ".html"]
+	},
+	"bruises":{
+		"title": "Bruises",
+		"link": "bruises.html",
+		"year": 2011,
+		"subtitle": "Oil on wooden panel",
+		"header-image": "",
+		"nextlink": ["", ".html"],
+		"prevlink": ["", ".html"]
+	},
+	"waiting2":{
+		"title": "Waiting II",
+		"link": "waiting2.html",
+		"year": 2010,
+		"subtitle": "Photography and stop motion video",
+		"header-image": "",
+		"nextlink": ["", ".html"],
+		"prevlink": ["", ".html"]
+	},
+	"waiting1":{
+		"title": "Waiting I",
+		"link": "waiting1.html",
+		"year": 2009,
+		"subtitle": "Photography",
+		"header-image": "",
+		"nextlink": ["", ".html"],
+		"prevlink": ["", ".html"]
+	},
+	"red":{
+		"title": "Red",
+		"link": "red.html",
+		"year": 2008,
+		"subtitle": "Documentation of performance",
+		"header-image": "img/projects/arhiva/ArhivaTV2_300dp11.jpg",
+		"img-src":"img/home/arhiva.jpg",
+		"nextlink": ["", ".html"],
+		"prevlink": ["", ".html"]
+	}
+}

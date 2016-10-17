@@ -1,0 +1,134 @@
+
+// HEADER
+.b-header{
+	position: fixed;
+	top: 0;
+    left: 0;
+	width: 100%;
+	margin-top: 50px;
+    padding: 0 100px;
+    box-sizing: border-box;
+	z-index:10;
+	visibility: visible;
+	transition: visibility 0.5s;
+	transition-delay: 0;
+
+	@include respond-to(tab) {
+        padding: 0 50px;
+        margin-top: 20px;
+    }
+
+    @include respond-to(phone) {
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    @include respond-to(tiny) {
+       margin-top: 0;
+    }
+
+	body:not(.is-scrolled-ontop) & {
+		visibility: hidden;
+		transition-delay: 0.5s;
+	}
+
+	.is-home-page & {
+		width: 70%;
+	}
+
+	.header-inner{
+		padding: 20px 0;
+		font-size: 12px;
+		// text-transform: uppercase;
+		letter-spacing: 1px;
+
+		.logo {
+			letter-spacing: 2px;
+			display: inline-block;
+			font-size: 12px;
+			font-family: 'Campton-Bold';
+			color: $textcolor;
+			text-transform: uppercase;
+			@include intro-anim;
+
+			body:not(.is-scrolled-ontop) & {
+				opacity: 0;
+				transform: translateY(-5px);
+			}
+		}
+
+		nav {
+			float: right;
+			text-align:right;
+
+			 @include respond-to(tiny) {
+		        float: left;
+		        text-align: left;
+		    }
+
+
+		
+			.nav_list{
+				display: inline-block;
+
+			}
+			.nav_list-item{
+				vertical-align:middle;
+				display: inline-block;
+				margin: 0 10px;
+				@include intro-anim;
+
+				&:first-child {
+			 		@include respond-to(tiny) {
+						margin-left: 0
+					}
+				 }
+
+				body:not(.is-scrolled-ontop) & {
+					opacity: 0;
+					transform: translateY();
+				}
+
+				@for $i from 1 through 5 {
+					&:nth-child(#{$i}){
+						transition-delay: #{ (0.05 * $i) }s;
+					}
+				}
+
+				
+			}
+
+			.nav_link {
+				position: relative;
+
+				
+				&:after {
+					position: absolute;
+					content: '';
+					width: 	0;
+					height: 1px;
+					background-color: $textcolor;
+					bottom: 0;
+					left: 0;
+					transition:	width 0.2s;
+				}
+				
+				&:hover {
+					&:after {
+						width: 	100%;
+					}
+				}
+
+				&.is-active {
+					pointer-events: none;
+					color: $textcolor-dim;
+
+					&:after {
+						background-color: $textcolor-dim;
+					}
+				}
+
+			}
+		}
+	}
+}
+

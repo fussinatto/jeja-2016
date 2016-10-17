@@ -1,0 +1,50 @@
+// Reset end
+$bgc: #fff;
+$footerbgc: #fafafa;
+$homeListBorder:#ddd;
+$textcolor: #343434;
+$textcolor-dim: #c9c9c9;
+$footertext: #676767;
+$menuarrow:#343434;
+
+@mixin intro-anim($top:-5px, $duration: 0.35s) {
+	transition-property: opacity, transform;
+	transition-duration: $duration;
+	opacity: 1;
+	transform: translateY(0);
+
+	body.play-page-outro &,
+	body:not(.is-page-loaded) & {
+		opacity: 0;
+		transform: translateY($top);
+	}
+}
+
+@mixin intro-anim-x($left:-5px, $duration: 0.35s) {
+	transition-property: opacity, transform;
+	transition-duration: 0.35s;
+	opacity: 1;
+	transform: translateX(0);
+
+	body.play-page-outro &,
+	body:not(.is-page-loaded) & {
+		opacity: 0;
+		transform: translateX($left);
+	}
+}
+
+// BP Variables
+$break-desktop: 1025px;
+$break-pad-max: 1024px;
+$break-pad-min: 768px;
+$break-phone-max: 767px;
+$break-tiny: 480px;
+
+$respond-to-breakpoints: (
+	desktop "(min-width:"+$break-desktop+")",
+	tab "(min-width:"+$break-pad-min+") and (max-width:"+$break-pad-max+")",
+	phone "(max-width:"+$break-phone-max+")",
+	tiny "(max-width:"+$break-tiny+")"
+);
+
+

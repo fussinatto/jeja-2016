@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html lang="en" class="no-js"> <!--<![endif]-->
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Jelena Fuzinato - {{title}}</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	{{!-- <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet"> --}}
+
+	{{> _styles}}
+	
+
+</head>
+
+<body class="{{bodyclass}}">
+	
+	{{>header}}
+
+
+	<main class="wrapper">
+		{{#block "main"}}{{/block}}
+	</main>
+
+	{{>footer}}
+	
+
+	<button class="scroll-to-top js-scroll-top">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 512 512" xml:space="preserve">
+		<path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" d="M256,160l160,153.594L370.281,352L256,236.812L141.719,352L96,313.594L256,160z"/>
+	</svg>
+	</button>
+
+
+
+	<script>
+		// this triggers first animation after load
+		setTimeout(function () {
+				document.body.classList.add('is-page-loaded');
+		},400)
+
+	</script>
+
+	
+	{{> _scripts}}
+
+</body>
+</html>
+

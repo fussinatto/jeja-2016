@@ -1,0 +1,37 @@
+<footer class="b-footer">
+    <section class="footer-inner m-centertext">
+
+        <div class="column-one is-phone-hidden">
+            {{#isnt showfooter false}}
+            <a class="prev-project-name proj-link" href="{{../prevlink}}">
+                 <span class="arrow arrow-prev">
+                    <span class="arrow-anim">&larr; &larr;</span>
+                </span>
+                <span>Project: {{../prevtitle}}</span>
+            </a>
+            {{else}}
+            Jelena Fuzinato - Visual Artist
+             {{/isnt}}
+        </div>
+
+        <div class="column-one is-phone-hidden">
+            {{#isnt showfooter false}}
+            <a class="next-project-name proj-link" href="{{next-project-link}}">
+                 <div class="arrow arrow-next">
+                    <span class="arrow-anim">&rarr; &rarr;</span>
+                </div>
+                 <span>Project: {{next-project-name}}</span>
+             </a>
+            {{/isnt}}
+        </div>
+
+        <div class="column-one is-phone">
+            Tel: <i>+49 (0)176 7930 7590</i>
+        </div>
+
+        <div class="column-one">
+          E-mail:  <i><a href="mailto:jelena.fuzinato@gmail.com">jelena.fuzinato@gmail.com</a></i>
+        </div>
+
+    </section>
+</footer>

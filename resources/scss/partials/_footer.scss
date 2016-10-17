@@ -1,0 +1,97 @@
+
+// FOOTER
+.b-footer{
+	padding: 20px 100px;
+	font-size: 12px;
+	background-color: $footerbgc;
+
+
+	@include respond-to(tab) {
+        padding: 20px 50px;
+    }
+
+    @include respond-to(phone) {
+        padding: 20px 20px;
+    }
+
+
+	.footer-inner{
+		overflow: hidden;
+		display: flex;	
+		justify-content: space-between;
+		
+		@include respond-to(tiny) {
+		    flex-direction: column;
+		}
+	}
+
+	.column-one {
+		opacity: 0;
+		transform: translateY(10px);
+		transition-property: opacity, transform;
+		transition-duration: 0.35s; 
+
+		@for $i from 1 through 4 {
+			&:nth-child(#{$i}){
+				transition-delay: #{ (0.08 * $i) }s;
+			}
+		}
+
+		body.is-scrolled-onbottom & {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		&.is-phone-hidden {
+			 @include respond-to(phone) {
+		        display: none;
+		    }
+		}
+	}
+
+	.arrow {
+	    overflow: hidden;
+	    width: 12px;
+	    height: 12px;
+	    display: inline-block;
+	    text-align: center;
+	    line-height: 8px;
+	    vertical-align: middle;
+	   
+	    .arrow-anim {
+    	    width: 30px;
+    		display: inline-block;
+    		transition: transform 0.2s;
+	    }
+
+	    &.arrow-next {
+	    	.arrow-anim {
+	    	    transform: translateX(-16px);
+	    	}
+	    }
+
+	    &.arrow-pref {
+    	    transform: translateX(0);
+	    }
+	}
+
+	.proj-link {
+		color: $footertext;
+		transition: color 0.35s;
+
+		&:hover {
+			color: $textcolor;
+
+	    	.arrow-next .arrow-anim{
+				transform: translateX(0);
+	    	}
+	    	.arrow-prev .arrow-anim{
+				transform: translateX(-16px);
+	    	}
+		}
+	}
+
+	.m-centertext{
+		text-align:center;
+	}
+}
