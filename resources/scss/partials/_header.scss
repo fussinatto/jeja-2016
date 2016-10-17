@@ -33,6 +33,10 @@
 
 	.is-home-page & {
 		width: 70%;
+
+		 @include respond-to(phone) {
+		 	width: 100%;
+		 }
 	}
 
 	.header-inner{

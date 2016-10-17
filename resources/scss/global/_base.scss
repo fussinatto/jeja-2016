@@ -78,10 +78,22 @@ a{
     .is-home-page & {
 		width: 100%;
 		padding-right: 25vw;
-		padding-left: 150px;
+		padding-left: 10vw;
 		padding-top: 170px;
 		padding-bottom:100px;
 		margin-top: 0; // weird affects are disturbing picture, so increadse padding insted
+
+        @include respond-to(tab) {
+            padding-right: 25vw;
+            padding-left: 50px;
+            padding-top: 100px;
+        }
+        
+        @include respond-to(phone) {
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 80px;
+        }
 	}
 
 }

@@ -57,7 +57,7 @@
 			opacity: 0;
 		}
 
-		@for $i from 1 through 10 {
+		@for $i from 1 through 15 {
 			&:nth-child(#{$i}){
 				transition-delay: #{ (0.1 * $i) }s;
 			}
@@ -117,7 +117,11 @@
 		font-size: 28px;
 		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 		font-weight: bold;
-		position: relative;		
+		position: relative;
+
+		@include respond-to(phone) {
+	       font-size: 22px;
+	    }
 	}
 
 	.proj-desc__wrapper {
@@ -129,6 +133,9 @@
 		display: inline-block;
 		transform: translateY(20px);
 		transition: transform 0.35s;
+		@include respond-to(phone) {
+			transform: translateY(0);
+		}
 	}
 
 	.proj-img {
@@ -140,6 +147,10 @@
 	    opacity: 0;
 	    object-fit: cover;
 	    transition: width 0.35s, opacity 0.2s;
+
+	    @include respond-to(phone) {
+	    	display: none;
+	    }
 	}
 }
 
