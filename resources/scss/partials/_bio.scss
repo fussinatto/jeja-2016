@@ -14,11 +14,19 @@
 	    line-height: 20px;
 	}
 
+	.bio-upper-section {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+
 	.bio-title {
-		// position: absolute;
-		margin-top: 100px;
 
-
+		padding-right: 30px;
+		@include respond-to(desktop) {
+			margin-top: 60px;
+	    }
 
 	    h2 {
 	        margin-bottom: 5px;
@@ -27,6 +35,12 @@
 	        line-height: 40px;
 	        letter-spacing: 6px;
 	    	text-transform: uppercase;
+
+	    	@include respond-to(phone) {
+				font-size: 18px;
+				line-height: 22px;
+				letter-spacing: 3px;
+	    	}
 	    }
 
 	    span {
@@ -34,36 +48,35 @@
 	        font-size: 16px;
 	    }
 
-	   
-
-	    .bio-titledesc{
-			padding-left: 15px;
-			font-size: 12px;
-		    
-		    &:before {
-		    	content: '';
-		    	position: absolute;
-		    	width: 10px;
-		    	height: 10px; 
-		    	left:0;
-		    	top:1px;
-				background-color: #ccc
-		    }
-	    }
-
-		
+	  		
 		&.is-fixed{
 			position: fixed;
 		}
 	}
 
 	.bio-img{
-
-		float: right;
-		padding-left: 20px;
-		width: 1000px;
 		@include intro-anim-x(-25px);
 		transition-delay: 0.2s;
+	    flex: 1 0 50%;
+
+	    @include respond-to(tiny) {
+			display: none;
+	    }
+
+		img {
+			width: 100%;
+       		height: 100%;
+	       	object-fit: contain;
+		}
+
+		@include respond-to(desktop) {
+	       width: 60%;
+	    }
+
+	     @include respond-to(tab, phone) {
+	       width: 50%;
+	       height: 300px;
+	    }
 
 		// Same effect as in project page
 		&:before {
@@ -83,44 +96,36 @@
 
 		}
 
-
-		// DESKTOP
-		@media (min-width: 1100px) {
-
-			&,img{
-		   		width: 600px;
-			}
-		}
-
-		// WIDESCREEN
-		@media (min-width: 1401px) {
-			&,img{
-		   		width: 800px;
-			}
-		}
-
 	}
 
-	article {
+	.bio-list {
 		@extend p;
-		padding-top:30px;
+		padding-top:50px;
+		display: flex;
 
-		h4{
+		@include respond-to(phone) {
+	      flex-direction: column;
+	    }
+
+
+		h4 {
 			padding: 10px 0;
 		}
 
-		ul{
+		ul {
 			padding-bottom:20px;
 		}
 
-		.col-left, .col-right{
-			float:left;
-			width: 40%;
-		}
+		// .col-left, 
+		// .col-right{
+		// 	float:left;
+		// 	display: inline-block;
+		// 	width: 50%;
+		// 	box-sizing: border-box;
+		// }
 
 		.col-left{
-			padding-right: 5%;
-
+			padding-right: 30px;
 		}
 	}
 }

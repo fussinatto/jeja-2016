@@ -30,6 +30,12 @@
 	        line-height: 40px;
 	        letter-spacing: 10px;
 	    	text-transform: uppercase;
+
+	    	@include respond-to(phone) {
+				font-size: 34px;
+		        line-height: 34px;
+		        letter-spacing: 6px;
+	    	}
 	    }
 
 	    span {

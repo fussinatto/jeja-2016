@@ -11,7 +11,8 @@
 		}
 
 		@include respond-to(phone) {
-			display: none;
+			position: relative;
+			margin-top: 25px;
 		}
 
 		li {
@@ -33,6 +34,11 @@
 	    padding-left: 30px;
 	    color: $textcolor-dim;
 	    transition: color 0.35s;
+
+	    @include respond-to(phone) {
+			color: $textcolor;
+			text-decoration: underline;
+	    }
 	  
 
 	    &.is-active {
