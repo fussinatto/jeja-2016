@@ -57,7 +57,7 @@
 			opacity: 0;
 		}
 
-		@for $i from 1 through 15 {
+		@for $i from 1 through 16 {
 			&:nth-child(#{$i}){
 				transition-delay: #{ (0.1 * $i) }s;
 			}
